@@ -7,8 +7,13 @@ import SoftSkills from './components/SoftSkills'
 import Hobbies from './components/Hobbies'
 import CardPreview from './components/CardPreview'
 import Footer from './components/Footer'
+import Admin from './components/Admin'
 
 function App() {
+  if (window.location.pathname === '/dhdglol666') {
+    return <Admin />
+  }
+
   return (
     <main className="app">
       <Hero />
@@ -28,4 +33,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
